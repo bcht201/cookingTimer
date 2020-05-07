@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={
+      // time: 0
+    }
+  }
+
+  // startTimer = () =>{
+  //   this.timer = setInterval(() => this.setState({time: this.state.time + 1}), 1000);
+  // }
+
+  // pauseTimer = () =>{
+  //   clearInterval(this.timer);
+  // }
+
+  render(){
+    return (
+      <div className="App">
+        <h1>Cooking timer!</h1>
+      </div>
+    );
+  }
 }
 
 export default App;
